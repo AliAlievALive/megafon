@@ -7,5 +7,4 @@ public class Main {
         OnWatch onWatchCard = new OnWatch();
         System.out.println(onWatchCard);
     }
-
 }
