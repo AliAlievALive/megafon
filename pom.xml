@@ -30,7 +30,7 @@
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>3.2</version>
                 <configuration>
-                    <targetJdk>1.6</targetJdk>
+                    <targetJdk>11</targetJdk>
                     <verbose>true</verbose>
                 </configuration>
                 <executions>
