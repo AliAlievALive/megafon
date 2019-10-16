@@ -1,7 +1,6 @@
 package ru.itpark.model;
 
 import ru.itpark.util.BottomBlockOfMiddle;
-import ru.itpark.util.CardMountableTrio;
 import ru.itpark.util.Button;
 
 public class OnWatch {
