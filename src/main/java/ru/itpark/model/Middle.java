@@ -1,18 +1,19 @@
 package ru.itpark.model;
 
+import ru.itpark.util.BottomBlockOfMiddle;
 import ru.itpark.util.CardMountable;
 
 public class Middle implements CardMountable {
     private String topBlock;
-    private String[][] bottomBlock;
+    private BottomBlockOfMiddle bottomBlock;
 
     public Middle(String topBlock) {
         this.topBlock = topBlock;
     }
 
-    public Middle(String topBlock, String[][] bottomBlock) {
+    public Middle(String topBlock, BottomBlockOfMiddle bBlock) {
         this.topBlock = topBlock;
-        this.bottomBlock = bottomBlock;
+        bottomBlock = bBlock;
     }
 
     public String getTopBlock() {
@@ -23,26 +24,16 @@ public class Middle implements CardMountable {
         this.topBlock = topBlock;
     }
 
-    public String[][] getBottomBlock() {
+    public BottomBlockOfMiddle getBottomBlock() {
         return bottomBlock;
     }
 
-    public void setBottomBlock(String[][] bottomBlock) {
-        this.bottomBlock = bottomBlock;
+    public void setBottomBlock(BottomBlockOfMiddle bBlock) {
+        bottomBlock = bBlock;
     }
 
-    public String stringBottomBlock(String[][] array) {
-        String result = "";
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array.length; j++) {
-                result += array[i][j] + " ";
-            }
-            result += "\n";
-        }
-        return result;
-    }
     @Override
     public String toString() {
-        return topBlock + "\n" + stringBottomBlock(bottomBlock) + "\n";
+        return topBlock + "\n" + getBottomBlock().toString() + "\n";
     }
 }
