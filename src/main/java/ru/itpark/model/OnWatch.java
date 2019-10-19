@@ -1,19 +1,20 @@
 package ru.itpark.model;
 
-import ru.itpark.util.BottomBlockOfMiddle;
-import ru.itpark.util.Button;
-
-public class OnWatch {
-    Top onWatchTop = new Top("Включайся!\nСмотри");
-    Middle onWatchMiddle = new Middle("1200 минут" + "\nбезлимитный интернет" + "\n300 SMS",
-            new BottomBlockOfMiddle(new String[][]{
-                    {"https://...", "Кино и сериалы на МегаФон ТВ"},
-                    {"https://...", "Кэшбэк до 30%"}
-            }));
-    Bottom onWatchBottom = new Bottom("650 Р за 30 дней", new Button(true));
+public class OnWatch extends Tariff {
+    public OnWatch(int id, HeadAndSubhead title, CommunicationConditions conditions, int price,
+                   boolean about, boolean choose) {
+        super(id, title, conditions, price, about, choose);
+    }
 
     @Override
     public String toString() {
-        return onWatchTop.toString() + onWatchMiddle + onWatchBottom;
+        return "OnWatch{" +
+                "id=" + id +
+                ", title=" + title +
+                ", conditions=" + conditions +
+                ", price=" + price +
+                ", choose=" + choose +
+                ", about=" + about +
+                '}';
     }
 }
