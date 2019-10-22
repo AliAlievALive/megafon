@@ -24,4 +24,12 @@ public class UnlimTo {
     public void setUnlimitedRussia(boolean unlimitedRussia) {
         this.unlimitedRussia = unlimitedRussia;
     }
+
+    @Override
+    public String toString() {
+        return "UnlimTo{" +
+                "unlimitedMegafoneCall=" + unlimitedMegafoneCall +
+                ", unlimitedRussia=" + unlimitedRussia +
+                '}';
+    }
 }

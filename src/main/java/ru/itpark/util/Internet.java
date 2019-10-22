@@ -47,4 +47,13 @@ public class Internet {
     public void setUnlimited(boolean unlimited) {
         this.unlimited = unlimited;
     }
+
+    @Override
+    public String toString() {
+        return "Internet{" +
+                "payAfterUse=" + payAfterUse +
+                ", trafficLimit=" + trafficLimit +
+                ", unlimited=" + unlimited +
+                '}';
+    }
 }

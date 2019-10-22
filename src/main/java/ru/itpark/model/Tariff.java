@@ -3,10 +3,10 @@ package ru.itpark.model;
 abstract class Tariff {
     int id;
     HeadAndSubhead title;
-    CommunicationConditions conditions;
+    private CommunicationConditions conditions;
     int price;
-    boolean choose;
-    boolean about;
+    private boolean choose;
+    private boolean about;
 
     public Tariff(int id, HeadAndSubhead title, CommunicationConditions conditions, int price, boolean about) {
         this.id = id;
@@ -14,6 +14,9 @@ abstract class Tariff {
         this.conditions = conditions;
         this.price = price;
         this.about = about;
+    }
+
+    public Tariff() {
     }
 
     public Tariff(int id, HeadAndSubhead title, CommunicationConditions conditions, int price,

@@ -60,4 +60,13 @@ public class PhoneCommunication {
     public void setCountMin(int countMin) {
         this.countMin = countMin;
     }
+
+    @Override
+    public String toString() {
+        return "PhoneCommunication{" +
+                "countMin=" + countMin +
+                ", unlimitedCall=" + unlimitedCall +
+                ", payForSeconds=" + payForSeconds +
+                '}';
+    }
 }
