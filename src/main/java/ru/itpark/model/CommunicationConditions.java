@@ -1,8 +1,5 @@
 package ru.itpark.model;
 
-import ru.itpark.util.Internet;
-import ru.itpark.util.PhoneCommunication;
-
 public class CommunicationConditions {
     private PhoneCommunication speaking;
     private Internet internet;

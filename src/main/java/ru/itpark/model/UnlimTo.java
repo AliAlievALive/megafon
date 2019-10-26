@@ -1,4 +1,4 @@
-package ru.itpark.util;
+package ru.itpark.model;
 
 public class UnlimTo {
     private boolean unlimitedMegafoneCall;
