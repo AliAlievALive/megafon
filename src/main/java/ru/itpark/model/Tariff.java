@@ -1,10 +1,10 @@
 package ru.itpark.model;
 
 abstract class Tariff {
-    int id;
-    HeadAndSubhead title;
+    private int id;
+    private HeadAndSubhead title;
     private CommunicationConditions conditions;
-    int price;
+    private int price;
     private boolean choose;
     private boolean about;
 
