@@ -6,16 +6,6 @@ public class CommunicationConditions {
     private int countsSms;
     private String bonuses = "";
 
-    @Override
-    public String toString() {
-        return "CommunicationConditions{" +
-                "speaking=" + speaking +
-                ", internet=" + internet +
-                ", countsSms=" + countsSms +
-                ", bonuses='" + bonuses + '\'' +
-                '}';
-    }
-
     public CommunicationConditions(PhoneCommunication speaking) {
         this.speaking = speaking;
     }
@@ -69,5 +59,15 @@ public class CommunicationConditions {
 
     public void setBonuses(String bonuses) {
         this.bonuses = bonuses;
+    }
+
+    @Override
+    public String toString() {
+        return "CommunicationConditions{" +
+                "speaking=" + speaking +
+                ", internet=" + internet +
+                ", countsSms=" + countsSms +
+                ", bonuses='" + bonuses + '\'' +
+                '}';
     }
 }

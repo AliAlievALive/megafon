@@ -5,8 +5,8 @@ abstract class Tariff {
     private HeadAndSubhead title;
     private CommunicationConditions conditions;
     private int price;
-    private boolean choose;
     private boolean about;
+    private boolean choose;
 
     public Tariff(int id, HeadAndSubhead title, CommunicationConditions conditions, int price, boolean about) {
         this.id = id;
@@ -14,9 +14,6 @@ abstract class Tariff {
         this.conditions = conditions;
         this.price = price;
         this.about = about;
-    }
-
-    public Tariff() {
     }
 
     public Tariff(int id, HeadAndSubhead title, CommunicationConditions conditions, int price,

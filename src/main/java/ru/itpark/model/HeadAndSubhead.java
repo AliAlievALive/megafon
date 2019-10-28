@@ -43,4 +43,13 @@ public class HeadAndSubhead {
     public void setSubHead(String subHead) {
         this.subHead = subHead;
     }
+
+    @Override
+    public String toString() {
+        return "HeadAndSubhead{" +
+                "name='" + name + '\'' +
+                ", subHead='" + subHead + '\'' +
+                ", hit='" + hit + '\'' +
+                '}';
+    }
 }

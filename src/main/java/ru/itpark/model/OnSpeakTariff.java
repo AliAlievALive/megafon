@@ -1,21 +1,16 @@
 package ru.itpark.model;
 
-public class OnWatchTariff extends Tariff {
+public class OnSpeakTariff extends Tariff {
     private int id;
-    private String head;
+    private HeadAndSubhead title;
     private CommunicationConditions conditions;
     private int price;
     private boolean about;
     private boolean choose;
 
-    public OnWatchTariff() {
-        id = 1;
-        head = "On! Watch";
-        conditions = new CommunicationConditions(new PhoneCommunication(1200),
-                new Internet(), 300);
-        price = 750;
-        about = true;
-        choose = true;
+    public OnSpeakTariff(int id, HeadAndSubhead title, CommunicationConditions conditions, int price, boolean about, boolean choose) {
+        super(id, title, conditions, price, about);
+        this.choose = choose;
     }
 
     @Override
@@ -26,14 +21,6 @@ public class OnWatchTariff extends Tariff {
     @Override
     public void setId(int id) {
         this.id = id;
-    }
-
-    public String getHead() {
-        return head;
-    }
-
-    public void setHead(String head) {
-        this.head = head;
     }
 
     @Override
@@ -74,17 +61,5 @@ public class OnWatchTariff extends Tariff {
     @Override
     public void setChoose(boolean choose) {
         this.choose = choose;
-    }
-
-    @Override
-    public String toString() {
-        return "OnWatchTariff{" +
-                "id=" + id +
-                ", head='" + head + '\'' +
-                ", conditions=" + conditions +
-                ", price=" + price +
-                ", about=" + about +
-                ", choose=" + choose +
-                "} ";
     }
 }
